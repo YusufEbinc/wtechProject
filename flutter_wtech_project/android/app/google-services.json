@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "858269463298",
+    "project_id": "wtech-641bb",
+    "storage_bucket": "wtech-641bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858269463298:android:38c6b301737df5357c881b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_wtech_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858269463298-t1v8subqesov31fhcuenba8954tkm4vq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_wtech_project",
+            "certificate_hash": "c49620c795ea9219e4ecb480ccfbb0492a672617"
+          }
+        },
+        {
+          "client_id": "858269463298-ebqlpe2e1glcspel6n3ntnietbbr3lo2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9TTnmQcscJi_aQAx3ZmdIegaI2TsC_RY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858269463298-ebqlpe2e1glcspel6n3ntnietbbr3lo2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
