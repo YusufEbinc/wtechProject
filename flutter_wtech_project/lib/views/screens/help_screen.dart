@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:flutter_wtech_project/views/screens/home_screen.dart';
 import 'package:flutter_wtech_project/views/screens/profil_screen.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class HelpPage extends StatefulWidget {
   const HelpPage({
@@ -31,11 +32,26 @@ class _HelpPageState extends State<HelpPage> {
 
   @override
   Widget build(BuildContext context) {
+    YoutubePlayerController controller = YoutubePlayerController(
+      initialVideoId: 'https://www.youtube.com/watch?v=1lxRPtq7G7s&t=123s',
+      flags: const YoutubePlayerFlags(
+        autoPlay: false,
+        mute: false,
+      ),
+    );
     return Scaffold(
-      body: Column(
-        children: const [
-          Text('Yardım Sayfası'),
-        ],
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(30),
+            child: YoutubePlayer(
+              controller: controller,
+              liveUIColor: Colors.red,
+              showVideoProgressIndicator: true,
+            ),
+          ),
+        ),
       ),
       drawer: Drawer(
         elevation: 20,
